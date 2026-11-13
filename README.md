@@ -5,12 +5,12 @@ A small WoW Forever addon that nags you, raid-warning style, when your **Cozy Sl
 ## Install
 
 1. Download `POSEhusker-<version>.zip` from the [latest release](../../releases/latest).
-2. Unzip it so you get `.../Interface/AddOns/POSEhusker/POSEhusker.toc`. WoW Forever shares the retail `Interface/AddOns` folder.
+2. Unzip it into the `_forever_` client's `Interface/AddOns` folder so you get `.../Interface/AddOns/POSEhusker/POSEhusker.toc`.
 3. Start the game. If it shows as out of date, tick **Load out of date AddOns** or fix the Interface number (below).
 
 ### Setting the Interface number
 
-The `.toc` ships with `120000` (Midnight) as a guess. In game run `/dump select(4, GetBuildInfo())` and put the result in the `## Interface:` line of `POSEhusker.toc`.
+The `.toc` lists `16001` (what other WoW Forever addons use) and `120000`. In game run `/dump select(4, GetBuildInfo())` and put the result in the `## Interface:` line of `POSEhusker.toc`.
 
 ## Commands (`/posehusker` or `/ph`)
 
@@ -29,7 +29,7 @@ The bag item and the buff's spell ID are auto-detected by English name and cache
 
 ## Known limitations / to verify in game
 
-- Interface number and the exact buff name ("Well Rested") are unconfirmed for Forever; see `docs/PLAN.md` §2, §5.2 and the checklist in §8. Confirm the buff with `/dump C_UnitAuras.GetAuraDataByIndex("player", 1, "HELPFUL")`.
+- Confirmed in game: the buff is named "Well-Rested" (spell 429959). Interface `16001` is inferred from other Forever addons. Not yet confirmed: the Cozy Sleeping Bag item name and alert behaviour; see `docs/PLAN.md` §8.
 - Nothing is evaluated in combat; secret values are skipped silently.
 - If `/ph` collides with another addon, `/posehusker` always works.
 

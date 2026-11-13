@@ -1,7 +1,7 @@
-## Interface: 120000
+## Interface: 16001, 120000
 ## Title: POSEhusker
 ## Notes: Reminds you to refresh your Cozy Sleeping Bag Well Rested buff.
 ## Author: Casper
-## Version: 1.0.0
+## Version: 1.0.1
 ## SavedVariables: POSEhuskerDB
 POSEhusker.lua

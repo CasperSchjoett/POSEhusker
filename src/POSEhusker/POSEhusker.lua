@@ -2,7 +2,7 @@
 -- Well Rested has <= threshold seconds left. Read-only: no protected actions.
 local ADDON_NAME = "POSEhusker"
 local BAG_NAME = "Cozy Sleeping Bag"
-local BUFF_NAME = "Well Rested"
+local BUFF_NAME = "Well-Rested" -- confirmed in game: spell 429959
 local PREFIX = "|cff66ccffPOSEhusker|r: "
 
 local DEFAULTS = {

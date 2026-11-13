@@ -27,7 +27,7 @@ C_Container = {
   GetContainerItemInfo=function(b,s) if b==1 and s==2 and W.bag then return {itemID=W.bag.id,itemName=W.bag.name} end end,
   GetItemCooldown=function() return W.cd[1], W.cd[2] end }
 C_UnitAuras = {
-  GetAuraDataBySpellName=function(_,n) return W.aura and n=="Well Rested" and W.aura or nil end,
+  GetAuraDataBySpellName=function(_,n) return W.aura and n=="Well-Rested" and W.aura or nil end,
   GetPlayerAuraBySpellID=function(id) return W.aura and W.aura.spellId==id and W.aura or nil end }
 C_Timer = { NewTicker=function() return {} end }
 RaidWarningFrame, ChatTypeInfo, SOUNDKIT = {}, {RAID_WARNING={}}, {RAID_WARNING=1}
